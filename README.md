@@ -27,7 +27,7 @@ This project runs a Flask web application and a MySQL database in separate Docke
 ```docker network create clo835-network ```
 
 ### Running mysql DB on port 3306 in the same network created
-```docker run -d -p 3306:3306 --network=clo835-network -e MYSQL_ROOT_PASSWORD=pass@1234  clo835-db --name=clo835-db```
+```docker run -d -p 3306:3306 --network=clo835-network -e MYSQL_ROOT_PASSWORD=pass@1234 --name=clo835-db clo835-db ```
 
 ### Exporting the values for the app
 ```
@@ -39,15 +39,15 @@ export DBPWD=pass@1234
 ```
 ### Run the application where the background is blue on port 8081
 
-```docker run -d -p 8081:8080 --network=clo835-network -e DBHOST=$DBHOST -e DBPORT=$DBPORT -e  DBUSER=$DBUSER -e DBPWD=$DBPWD -e APP_COLOR=blue  clo835-app --name=clo835-app-blue```
+```docker run -d -p 8081:8080 --network=clo835-network -e DBHOST=$DBHOST -e DBPORT=$DBPORT -e  DBUSER=$DBUSER -e DBPWD=$DBPWD -e APP_COLOR=blue --name=clo835-app-blue clo835-app```
 
 ### Run the application where the background is pink on port 8082
 
-```docker run -d -p 8082:8080 --network=clo835-network -e DBHOST=$DBHOST -e DBPORT=$DBPORT -e  DBUSER=$DBUSER -e DBPWD=$DBPWD -e APP_COLOR=pink  clo835-app --name=clo835-app-pink```
+```docker run -d -p 8082:8080 --network=clo835-network -e DBHOST=$DBHOST -e DBPORT=$DBPORT -e  DBUSER=$DBUSER -e DBPWD=$DBPWD -e APP_COLOR=pink --name=clo835-app-pink clo835-app```
 
 ### Run the application where the background is lime on port 8083
 
-```docker run -d -p 8083:8080 --network=clo835-network -e DBHOST=$DBHOST -e DBPORT=$DBPORT -e  DBUSER=$DBUSER -e DBPWD=$DBPWD -e APP_COLOR=lime  clo835-app --name=clo835-app-lime```
+```docker run -d -p 8083:8080 --network=clo835-network -e DBHOST=$DBHOST -e DBPORT=$DBPORT -e  DBUSER=$DBUSER -e DBPWD=$DBPWD -e APP_COLOR=lime --name=clo835-app-lime clo835-app```
 
 
 ### Pull images from AWS ECR
