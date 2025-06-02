@@ -6,6 +6,7 @@ This project runs a Flask web application and a MySQL database in separate Docke
 
 ## 🧱 Project Structure
 
+```
 ├── Dockerfile # App container Dockerfile
 ├── app.py # Flask application
 ├── requirements.txt # Python dependencies
@@ -13,7 +14,7 @@ This project runs a Flask web application and a MySQL database in separate Docke
 │ ├── Dockerfile_mysql # MySQL container Dockerfile
 │ └── mysql.sql # SQL to initialize database
 └── templates/ # HTML templates
-
+```
 
 ### Building mysql docker image 
 ```docker build -t clo835-db -f "db/Dockerfile" . ```
