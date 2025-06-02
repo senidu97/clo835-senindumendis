@@ -35,7 +35,7 @@ jobs:
       run: |
         ls -al
         # Docker build Mysql
-        docker build -t $ECR_REGISTRY/$ECR_REPOSITORY_DB:$IMAGE_TAG -f "db/Dockerfile" .
+        docker build -t $ECR_REGISTRY/$ECR_REPOSITORY_DB:$IMAGE_TAG -f db/Dockerfile .
         # Push Mysql to AWS ECR
         docker push $ECR_REGISTRY/$ECR_REPOSITORY_DB:$IMAGE_TAG
 
