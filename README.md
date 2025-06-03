@@ -1,4 +1,4 @@
-# CLO835-Assignment 1 – Flask App with MySQL (Dockerized) by senindumendis
+# CLO835-Assignment 1 – Flask App with MySQL (Dockerized) by senindumendis.
 
 This project runs a Flask web application and a MySQL database in separate Docker containers on a shared Docker network.
 
