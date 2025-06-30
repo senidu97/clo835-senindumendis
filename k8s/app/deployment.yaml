@@ -19,7 +19,7 @@ spec:
           imagePullPolicy: Always
           env:
             - name: DBHOST
-              value: mysql.db.svc.cluster.local
+              value: mysql.db
             - name: DBPORT
               value: "3306"
             - name: DBUSER
