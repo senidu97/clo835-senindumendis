@@ -15,6 +15,7 @@ spec:
       containers:
         - name: mysql
           image: 471112916406.dkr.ecr.us-east-1.amazonaws.com/clo835-db:latest
+          imagePullPolicy: Always
           env:
             - name: MYSQL_ROOT_PASSWORD
               value: pass@1234
