@@ -70,5 +70,5 @@ jobs:
             --instance-ids "$INSTANCE_ID" \
             --document-name "AWS-RunShellScript" \
             --comment "Triggering deployment from GitHub Actions" \
-            --parameters 'commands=["sudo -u ec2-user bash -c \"chmod +x /home/ec2-user/deploy.sh && /home/ec2-user/deploy.sh \""]' \
+            --parameters 'commands=["/home/ec2-user/deploy.sh"]' \
             --output text
