@@ -14,7 +14,7 @@ spec:
         app: employees
     spec:
       containers:
-        - name: flask-app
+        - name: web-app
           image: 471112916406.dkr.ecr.us-east-1.amazonaws.com/clo835-app:latest
           imagePullPolicy: Always
           env:
