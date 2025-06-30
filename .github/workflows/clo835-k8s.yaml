@@ -1,6 +1,6 @@
 #CLO835-Assignment2-senindumendis
 
-name: Deploy to AWS ECR
+name: K8s Cluster deployment by Senindu Mendis
 on: 
   push:
     branches: [ master ]
