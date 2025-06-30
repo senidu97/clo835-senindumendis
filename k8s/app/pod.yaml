@@ -4,10 +4,10 @@ metadata:
   name: web-pod
   namespace: web
   labels:
-    app: employees
+    app: lime-app
 spec:
   containers:
-  - name: blue-app
+  - name: lime-app
     image: 471112916406.dkr.ecr.us-east-1.amazonaws.com/clo835-app:latest
     env:
     - name: DBHOST
@@ -19,7 +19,7 @@ spec:
     - name: DBPWD
       value: pass@1234
     - name: APP_COLOR
-      value: blue
+      value: lime
     ports:
     - containerPort: 8080
   imagePullSecrets:
