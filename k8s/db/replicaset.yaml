@@ -3,7 +3,7 @@ kind: ReplicaSet
 metadata:
   name: mysql-rs
 spec:
-  replicas: 3
+  replicas: 1
   selector:
     matchLabels:
       app: mysql
